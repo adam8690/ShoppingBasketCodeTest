@@ -27,7 +27,7 @@ public class ShoppingBasket {
         this.loyaltyDiscountFactor = loyaltyDiscountFactor;
     }
 
-    public double getValueDiscout() {
+    public double getValueDiscount() {
         return valueDiscountFactor;
     }
 
@@ -39,7 +39,7 @@ public class ShoppingBasket {
         basket.add(item);
     }
 
-    public int value(){
+    public int valueNoDiscount(){
         int totalValue = 0;
         for (Item item : basket){
             totalValue = totalValue + item.getPrice();

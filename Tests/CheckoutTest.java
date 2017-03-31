@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CheckoutTest {
 
     ShoppingBasket shoppingBasket = new ShoppingBasket();
+    Item item = new Item("Champagne", 3000);
     Customer customer = new Customer("Adam");
     Checkout checkout = new Checkout( customer, shoppingBasket);
 
@@ -21,5 +22,10 @@ public class CheckoutTest {
         assertEquals(0, checkout.getShoppingBasket().getBasket().size());
     }
 
+    @Test
+    public void testCanGetValueWithNoDiscounts(){
+        shoppingBasket.addToShoppingBasket(item);
+        assertEquals(3000, checkout.getShoppingBasket().valueNoDiscount());
+    }
 
 }
