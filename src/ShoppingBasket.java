@@ -7,12 +7,12 @@ public class ShoppingBasket {
 
     ArrayList<Item> basket;
     int loyaltyDiscount;
-    int valueDiscout;
+    int valueDiscount;
 
     public ShoppingBasket() {
         basket = new ArrayList<Item>();
         loyaltyDiscount = 2;
-        valueDiscout = 10;
+        valueDiscount = 10;
     }
 
     public ArrayList<Item> getBasket() {
@@ -28,16 +28,23 @@ public class ShoppingBasket {
     }
 
     public int getValueDiscout() {
-        return valueDiscout;
+        return valueDiscount;
     }
 
     public void setValueDiscout(int valueDiscout) {
-        this.valueDiscout = valueDiscout;
+        this.valueDiscount = valueDiscout;
     }
 
     public void addToShoppingBasket(Item item){
         basket.add(item);
     }
 
+    public int value(){
+        int totalValue = 0;
+        for (Item item : basket){
+            totalValue = totalValue + item.getPrice();
+        }
+        return totalValue;
+    }
 
 }

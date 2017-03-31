@@ -27,4 +27,10 @@ public class ShoppingBasketTest {
         assertEquals(1, basket.size());
     }
 
+    @Test
+    public void testCanGetValueOfBasket(){
+        basket.add(item);
+        assertEquals(200, shoppingBasket.value());
+    }
+
 }
