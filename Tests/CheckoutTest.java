@@ -28,4 +28,16 @@ public class CheckoutTest {
         assertEquals(3000, checkout.getShoppingBasket().valueNoDiscount());
     }
 
+    @Test
+    public void testCanApplyValueDiscount(){
+        shoppingBasket.addToShoppingBasket(item);
+        assertEquals(2700, checkout.applyValueDiscount(shoppingBasket.valueNoDiscount()));
+    }
+
+    @Test
+    public void testCanApplyLoyaltyDiscount(){
+        shoppingBasket.addToShoppingBasket(item);
+        assertEquals(2940, checkout.applyLoyaltyDiscount(shoppingBasket.valueNoDiscount()));
+    }
+
 }

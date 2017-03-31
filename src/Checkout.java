@@ -18,4 +18,11 @@ public class Checkout {
     public ShoppingBasket getShoppingBasket() {
         return shoppingBasket;
     }
+
+    public int applyValueDiscount(int currentValue) {
+        double discountFactor = shoppingBasket.getValueDiscount();
+        int newValue =  (int) ( currentValue * discountFactor );
+        return newValue;
+    }
+
 }
