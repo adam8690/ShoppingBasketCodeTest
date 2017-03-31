@@ -35,5 +35,7 @@ public class ItemTest {
         assertEquals(0, item.getOffers().size());
         }
 
+
+
 }
 

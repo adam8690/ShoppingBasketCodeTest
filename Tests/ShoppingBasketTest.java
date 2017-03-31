@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
  */
 public class ShoppingBasketTest {
 
-    ShoppingBasket shoppingBasket = new ShoppingBasket();
+    ShoppingBasket shoppingBasket = new ShoppingBasket(false);
     Item item = new Item("Beans", 200);
     ArrayList<Item> basket = shoppingBasket.getBasket();
 
@@ -48,7 +48,16 @@ public class ShoppingBasketTest {
         assertEquals(0, basket.size());
     }
 
+    @Test
+    public void testHasLoyaltyCard(){
+        assertEquals(false, shoppingBasket.hasLoyaltyCard());
+    }
 
+    @Test
+    public void setHasLoyaltyCardTrue(){
+        shoppingBasket.setHasLoyaltyCard(true);
+        assertEquals(true, shoppingBasket.hasLoyaltyCard());
+    }
 
 
 }
