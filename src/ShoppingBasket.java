@@ -35,7 +35,9 @@ public class ShoppingBasket {
         this.valueDiscout = valueDiscout;
     }
 
-
+    public void addToShoppingBasket(Item item){
+        basket.add(item);
+    }
 
 
 }

@@ -13,17 +13,18 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class ShoppingBasketTest {
 
     ShoppingBasket shoppingBasket = new ShoppingBasket();
-    Item item = new Item();
+    Item item = new Item("Beans", 200);
+    ArrayList<Item> basket = shoppingBasket.getBasket();
 
     @Test
     public void testShoppingBasketIsEmpty(){
-
-        assertEquals(0, shoppingBasket.getBasket().size());
+        assertEquals(0, basket.size());
     }
 
     @Test
     public void testCanAddItemToList(){
-        assertEquals(1, shoppingBasket.add(item));
+        basket.add(item);
+        assertEquals(1, basket.size());
     }
 
 }
