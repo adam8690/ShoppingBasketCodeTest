@@ -25,4 +25,10 @@ public class Checkout {
         return newValue;
     }
 
+    public int applyLoyaltyDiscount(int currentValue){
+        double discountFactor = shoppingBasket.getLoyaltyDiscountFactor();
+        int newValue  = (int) (currentValue * discountFactor);
+        return newValue;
+    }
+
 }
