@@ -13,13 +13,13 @@ public class CheckoutTest {
 
     @Test
     public void testCanGetCustomerName(){
-        assertEquals("Adam", customer.getName());
+        assertEquals("Adam", checkout.getCustomer().getName());
     }
 
     @Test
     public void testCanGetShoppingBasket(){
-        assertEquals(0, shoppingBasket.getBasket().size());
+        assertEquals(0, checkout.getShoppingBasket().getBasket().size());
     }
-    
+
 
 }

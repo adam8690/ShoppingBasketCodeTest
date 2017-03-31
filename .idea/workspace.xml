@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c134ff7c-fe25-4ed1-84cb-259ba1e405cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ShoppingBasketCodeTest/Checkout.class" afterPath="$PROJECT_DIR$/out/production/ShoppingBasketCodeTest/Checkout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ShoppingBasketCodeTest/ShoppingBasket.class" afterPath="$PROJECT_DIR$/out/production/ShoppingBasketCodeTest/ShoppingBasket.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/ShoppingBasketCodeTest/CheckoutTest.class" afterPath="$PROJECT_DIR$/out/test/ShoppingBasketCodeTest/CheckoutTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/ShoppingBasketCodeTest/ShoppingBasketTest.class" afterPath="$PROJECT_DIR$/out/test/ShoppingBasketCodeTest/ShoppingBasketTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/CheckoutTest.java" afterPath="$PROJECT_DIR$/Tests/CheckoutTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/ShoppingBasketTest.java" afterPath="$PROJECT_DIR$/Tests/ShoppingBasketTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Checkout.java" afterPath="$PROJECT_DIR$/src/Checkout.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,14 +104,14 @@
       <file leaf-file-name="CheckoutTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/CheckoutTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="300">
+              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -638,8 +631,8 @@
     <history-entry file="All_in_ShoppingBasketCodeTest - 2017.03.31 at 17h 44m 19s.xml">
       <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemTest - 2017.03.31 at 16h 33m 23s.xml">
-      <configuration name="ItemTest" configurationId="JUnit" />
+    <history-entry file="All_in_ShoppingBasketCodeTest - 2017.03.31 at 17h 47m 30s.xml">
+      <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ShoppingBasketTest - 2017.03.31 at 16h 33m 37s.xml">
       <configuration name="ShoppingBasketTest" configurationId="JUnit" />
@@ -864,14 +857,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/CheckoutTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="300">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
           </folding>
         </state>
       </provider>
