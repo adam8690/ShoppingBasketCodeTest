@@ -19,4 +19,21 @@ public class ItemTest {
         item.addBogof();
         assertEquals("bogof", item.getOffers().get(0));
     }
+
+    @Test
+    public void testCantAddOfferTwice(){
+        item.addBogof();
+        item.addBogof();
+        assertEquals(1, item.getOffers().size());
+    }
+
+    @Test
+    public void canRemoveBogofOffer(){
+        item.addBogof();
+        assertEquals(1, item.getOffers().size());
+        item.removeBogof();
+        assertEquals(0, item.getOffers().size());
+        }
+
 }
+

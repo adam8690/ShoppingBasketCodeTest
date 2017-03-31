@@ -56,4 +56,12 @@ public class Item {
         }
         else offers.add("bogof");
     }
+
+    public void removeBogof(){
+        if (offers.contains("bogof")){
+            offers.remove("bogof");
+        }
+        else return;
+    }
+
 }
