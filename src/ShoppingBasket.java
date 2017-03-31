@@ -5,9 +5,9 @@ import java.util.ArrayList;
  */
 public class ShoppingBasket {
 
-    ArrayList<Item> basket;
-    int loyaltyDiscount;
-    int valueDiscount;
+    private ArrayList<Item> basket;
+    private int loyaltyDiscount;
+    private int valueDiscount;
 
     public ShoppingBasket() {
         basket = new ArrayList<Item>();
@@ -45,6 +45,10 @@ public class ShoppingBasket {
             totalValue = totalValue + item.getPrice();
         }
         return totalValue;
+    }
+
+    public void clear(){
+        basket.clear();
     }
 
 }

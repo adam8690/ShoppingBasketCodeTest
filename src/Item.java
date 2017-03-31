@@ -6,10 +6,10 @@ import java.util.HashMap;
  */
 public class Item {
 
-    String name;
-    int price;
-    int discount;
-    ArrayList<String> offers;
+    private String name;
+    private int price;
+    private int discount;
+    private ArrayList<String> offers;
 
     public Item(String name, int price) {
         this.name = name;
