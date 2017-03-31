@@ -14,6 +14,8 @@ public class Item {
     public Item(String name, int price) {
         this.name = name;
         this.price = price;
+        this.offers = new ArrayList<String>();
+        this.discount = discount;
     }
 
     public String getName() {
@@ -46,5 +48,12 @@ public class Item {
 
     public void setOffers(ArrayList<String> offers) {
         this.offers = offers;
+    }
+
+    public void addBogof(){
+        if (offers.contains("bogof")){
+            return;
+        }
+        else offers.add("bogof");
     }
 }

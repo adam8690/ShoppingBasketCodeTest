@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.Before;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Created by user on 31/03/2017.
@@ -48,6 +47,7 @@ public class ShoppingBasketTest {
         shoppingBasket.clear();
         assertEquals(0, basket.size());
     }
+
 
 
 

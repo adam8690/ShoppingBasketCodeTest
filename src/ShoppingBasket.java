@@ -6,33 +6,33 @@ import java.util.ArrayList;
 public class ShoppingBasket {
 
     private ArrayList<Item> basket;
-    private int loyaltyDiscount;
-    private int valueDiscount;
+    private double loyaltyDiscountFactor;
+    private double valueDiscountFactor;
 
     public ShoppingBasket() {
         basket = new ArrayList<Item>();
-        loyaltyDiscount = 2;
-        valueDiscount = 10;
+        loyaltyDiscountFactor = 0.98;
+        valueDiscountFactor = 0.90;
     }
 
     public ArrayList<Item> getBasket() {
         return basket;
     }
 
-    public int getLoyaltyDiscount() {
-        return loyaltyDiscount;
+    public double getLoyaltyDiscountFactor() {
+        return loyaltyDiscountFactor;
     }
 
-    public void setLoyaltyDiscount(int loyaltyDiscount) {
-        this.loyaltyDiscount = loyaltyDiscount;
+    public void setLoyaltyDiscountFactor(int loyaltyDiscountFactor) {
+        this.loyaltyDiscountFactor = loyaltyDiscountFactor;
     }
 
-    public int getValueDiscout() {
-        return valueDiscount;
+    public double getValueDiscout() {
+        return valueDiscountFactor;
     }
 
     public void setValueDiscout(int valueDiscout) {
-        this.valueDiscount = valueDiscout;
+        this.valueDiscountFactor = valueDiscout;
     }
 
     public void addToShoppingBasket(Item item){
