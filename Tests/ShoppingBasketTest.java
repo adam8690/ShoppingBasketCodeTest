@@ -49,7 +49,7 @@ public class ShoppingBasketTest {
     }
 
     @Test
-    public void testHasLoyaltyCard(){
+    public void testHasLoyaltyCardFalse(){
         assertEquals(false, shoppingBasket.hasLoyaltyCard());
     }
 
