@@ -1,9 +1,7 @@
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-import static com.sun.xml.internal.ws.dump.LoggingDumpTube.Position.Before;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
 
@@ -12,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
  */
 public class ShoppingBasketTest {
 
-    ShoppingBasket shoppingBasket = new ShoppingBasket(false);
+    ShoppingBasket shoppingBasket = new ShoppingBasket();
     Item item = new Item("Beans", 200);
     ArrayList<Item> basket = shoppingBasket.getBasket();
 

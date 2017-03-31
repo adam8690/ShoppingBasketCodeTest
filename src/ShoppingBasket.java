@@ -8,21 +8,11 @@ public class ShoppingBasket {
     private ArrayList<Item> basket;
     private double loyaltyDiscountFactor;
     private double valueDiscountFactor;
-    private boolean hasLoyaltyCard;
 
-    public ShoppingBasket(boolean hasLoyaltyCard) {
+    public ShoppingBasket() {
         basket = new ArrayList<Item>();
         loyaltyDiscountFactor = 0.98;
         valueDiscountFactor = 0.90;
-        hasLoyaltyCard = hasLoyaltyCard;
-    }
-
-    public boolean hasLoyaltyCard() {
-        return hasLoyaltyCard;
-    }
-
-    public void setHasLoyaltyCard(boolean hasLoyaltyCard) {
-        this.hasLoyaltyCard = hasLoyaltyCard;
     }
 
     public ArrayList<Item> getBasket() {
