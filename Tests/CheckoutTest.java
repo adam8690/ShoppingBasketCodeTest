@@ -40,4 +40,13 @@ public class CheckoutTest {
         assertEquals(2940, checkout.applyLoyaltyDiscount(shoppingBasket.valueNoDiscount()));
     }
 
+    @Test
+    public void testCanApplyBogofToTwoItems(){
+        item.addBogof();
+        shoppingBasket.addToShoppingBasket(item);
+        shoppingBasket.addToShoppingBasket(item);
+        assertEquals(3000, checkout.applyOffers());
+//        TODO create applyOffers method in checkout class which will check offers arraylist for which offers are applicable to the item and then go through the shoppingbasket to check which apply and apply them.
+    }
+
 }
