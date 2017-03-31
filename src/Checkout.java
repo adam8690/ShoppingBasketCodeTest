@@ -11,6 +11,11 @@ public class Checkout {
         this.shoppingBasket = shoppingBasket;
     }
 
-    
+    public Customer getCustomer() {
+        return customer;
+    }
 
+    public ShoppingBasket getShoppingBasket() {
+        return shoppingBasket;
+    }
 }

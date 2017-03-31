@@ -46,16 +46,4 @@ public class ShoppingBasketTest {
         assertEquals(0, basket.size());
     }
 
-    @Test
-    public void testHasLoyaltyCardFalse(){
-        assertEquals(false, shoppingBasket.hasLoyaltyCard());
-    }
-
-    @Test
-    public void setHasLoyaltyCardTrue(){
-        shoppingBasket.setHasLoyaltyCard(true);
-        assertEquals(true, shoppingBasket.hasLoyaltyCard());
-    }
-
-
 }
