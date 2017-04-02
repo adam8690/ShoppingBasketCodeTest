@@ -23,7 +23,7 @@ public class ShoppingBasketTest {
     @Test
     public void testCanAddItemToList(){
         shoppingBasket.addToShoppingBasket(item);
-        assertEquals(1, basket.size());
+        assertEquals(1, (int) shoppingBasket.getItemQuantity(item));
     }
 
     @Test
@@ -35,9 +35,9 @@ public class ShoppingBasketTest {
     @Test
     public void testCanRemoveItemsFromBasket(){
         shoppingBasket.addToShoppingBasket(item);
-        assertEquals(1, basket.size());
-        basket.remove(item);
-        assertEquals(0, basket.size());
+        assertEquals(1, shoppingBasket.getItemQuantity(item));
+        shoppingBasket.removeFromShoppingBasket(item);
+        assertEquals(0, shoppingBasket.getItemQuantity(item));
     }
 
     @Test

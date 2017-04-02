@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c134ff7c-fe25-4ed1-84cb-259ba1e405cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/ShoppingBasketTest.java" afterPath="$PROJECT_DIR$/Tests/ShoppingBasketTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Checkout.java" afterPath="$PROJECT_DIR$/src/Checkout.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShoppingBasket.java" afterPath="$PROJECT_DIR$/src/ShoppingBasket.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingBasket.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShoppingBasket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ShoppingBasket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="309">
+              <caret line="62" column="15" lean-forward="true" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#838#839#0" expanded="true" />
@@ -67,13 +65,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingBasketTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShoppingBasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/ShoppingBasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="557">
+              <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,8 +129,8 @@
         <option value="$PROJECT_DIR$/Tests/ItemTest.java" />
         <option value="$PROJECT_DIR$/Tests/CheckoutTest.java" />
         <option value="$PROJECT_DIR$/src/Checkout.java" />
-        <option value="$PROJECT_DIR$/Tests/ShoppingBasketTest.java" />
         <option value="$PROJECT_DIR$/src/ShoppingBasket.java" />
+        <option value="$PROJECT_DIR$/Tests/ShoppingBasketTest.java" />
       </list>
     </option>
   </component>
@@ -561,12 +561,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_ShoppingBasketCodeTest - 2017.04.02 at 11h 17m 45s.xml">
-      <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_ShoppingBasketCodeTest - 2017.04.02 at 11h 19m 13s.xml">
-      <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_ShoppingBasketCodeTest - 2017.04.02 at 11h 19m 25s.xml">
       <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
     </history-entry>
@@ -588,8 +582,14 @@
     <history-entry file="All_in_ShoppingBasketCodeTest - 2017.04.02 at 12h 29m 40s.xml">
       <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckoutTest_testCanApplyBogofToTwoItems - 2017.04.02 at 11h 19m 20s.xml">
-      <configuration name="CheckoutTest.testCanApplyBogofToTwoItems" configurationId="JUnit" />
+    <history-entry file="All_in_ShoppingBasketCodeTest - 2017.04.02 at 12h 33m 44s.xml">
+      <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_ShoppingBasketCodeTest - 2017.04.02 at 12h 37m 09s.xml">
+      <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_ShoppingBasketCodeTest - 2017.04.02 at 12h 44m 51s.xml">
+      <configuration name="All in ShoppingBasketCodeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -683,6 +683,8 @@
           <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -742,6 +744,8 @@
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -813,24 +817,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/ShoppingBasketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ShoppingBasket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="309">
+          <caret line="62" column="15" lean-forward="true" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#838#839#0" expanded="true" />
             <element signature="e#893#894#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/ShoppingBasketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
           </folding>
         </state>
       </provider>

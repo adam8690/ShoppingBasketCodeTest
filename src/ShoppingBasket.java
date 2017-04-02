@@ -39,10 +39,28 @@ public class ShoppingBasket {
     public void addToShoppingBasket(Item item) {
 //        if item exists in basket increment quan
         if (basket.get(item) != null) {
-            int quantity = basket.get(item);
+            int quantity = getItemQuantity(item);
             basket.put(item, (quantity + 1));
         }
         basket.put(item, 1);
+    }
+
+    public int getItemQuantity(Item item){
+        if (basket.get(item) != null){
+            return basket.get(item);
+        }
+        return 0;
+    }
+
+    public void removeFromShoppingBasket(Item item){
+        if (basket.get(item) != null){
+            int quantity = getItemQuantity(item);
+            if (quantity - 1 == 0){
+                basket.remove(item);
+            }
+            basket.put(item, quantity - 1);
+        }
+        return;
     }
 
     public int valueNoDiscount(){
