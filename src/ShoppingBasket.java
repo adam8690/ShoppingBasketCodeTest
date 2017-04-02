@@ -1,21 +1,22 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by user on 31/03/2017.
  */
 public class ShoppingBasket {
 
-    private ArrayList<Item> basket;
+    private HashMap<Item, Integer> basket;
     private double loyaltyDiscountFactor;
     private double valueDiscountFactor;
 
     public ShoppingBasket() {
-        basket = new ArrayList<Item>();
+        basket = new HashMap<>();
         loyaltyDiscountFactor = 0.98;
         valueDiscountFactor = 0.90;
     }
 
-    public ArrayList<Item> getBasket() {
+    public HashMap<Item, Integer> getBasket() {
         return basket;
     }
 
@@ -35,13 +36,18 @@ public class ShoppingBasket {
         this.valueDiscountFactor = valueDiscout;
     }
 
-    public void addToShoppingBasket(Item item){
-        basket.add(item);
+    public void addToShoppingBasket(Item item) {
+//        if item exists in basket increment quan
+        if (basket.get(item) != null) {
+            int quantity = basket.get(item);
+            basket.put(item, (quantity + 1));
+        }
+        basket.put(item, 1);
     }
 
     public int valueNoDiscount(){
         int totalValue = 0;
-        for (Item item : basket){
+        for (Item item : basket.keySet()){
             totalValue = totalValue + item.getPrice();
         }
         return totalValue;

@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
@@ -12,7 +13,7 @@ public class ShoppingBasketTest {
 
     ShoppingBasket shoppingBasket = new ShoppingBasket();
     Item item = new Item("Beans", 200);
-    ArrayList<Item> basket = shoppingBasket.getBasket();
+    HashMap<Item, Integer> basket = shoppingBasket.getBasket();
 
     @Test
     public void testShoppingBasketIsEmpty(){
@@ -21,19 +22,19 @@ public class ShoppingBasketTest {
 
     @Test
     public void testCanAddItemToList(){
-        basket.add(item);
+        shoppingBasket.addToShoppingBasket(item);
         assertEquals(1, basket.size());
     }
 
     @Test
     public void testCanGetValueOfBasket(){
-        basket.add(item);
+        shoppingBasket.addToShoppingBasket(item);
         assertEquals(200, shoppingBasket.valueNoDiscount());
     }
 
     @Test
     public void testCanRemoveItemsFromBasket(){
-        basket.add(item);
+        shoppingBasket.addToShoppingBasket(item);
         assertEquals(1, basket.size());
         basket.remove(item);
         assertEquals(0, basket.size());
@@ -41,7 +42,7 @@ public class ShoppingBasketTest {
 
     @Test
     public void testCanClearBasket(){
-        basket.add(item);
+        shoppingBasket.addToShoppingBasket(item);
         shoppingBasket.clear();
         assertEquals(0, basket.size());
     }
