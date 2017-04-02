@@ -37,12 +37,12 @@ public class ShoppingBasket {
     }
 
     public void addToShoppingBasket(Item item) {
-//        if item exists in basket increment quan
+//        if item exists in basket increment quantity
         if (basket.get(item) != null) {
-            int quantity = getItemQuantity(item);
+            int quantity = basket.get(item);
             basket.put(item, (quantity + 1));
         }
-        basket.put(item, 1);
+        else basket.put(item, 1);
     }
 
     public int getItemQuantity(Item item){

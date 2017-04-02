@@ -47,4 +47,13 @@ public class ShoppingBasketTest {
         assertEquals(0, basket.size());
     }
 
+    @Test
+    public void testCanAddMultipleItemsAndQuantityCorrect(){
+        shoppingBasket.addToShoppingBasket(item);
+        shoppingBasket.addToShoppingBasket(item);
+        shoppingBasket.addToShoppingBasket(item);
+        assertEquals(3, shoppingBasket.getItemQuantity(item));
+    }
+    
+
 }
