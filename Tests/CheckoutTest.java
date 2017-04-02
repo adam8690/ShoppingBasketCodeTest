@@ -9,6 +9,7 @@ public class CheckoutTest {
 
     ShoppingBasket shoppingBasket = new ShoppingBasket();
     Item item = new Item("Champagne", 3000);
+    Item item2 = new Item("Beer", 160);
     Customer customer = new Customer("Adam");
     Checkout checkout = new Checkout( customer, shoppingBasket);
 
@@ -25,19 +26,20 @@ public class CheckoutTest {
     @Test
     public void testCanGetValueWithNoDiscounts(){
         shoppingBasket.addToShoppingBasket(item);
-        assertEquals(3000, checkout.getShoppingBasket().valueNoDiscount());
+        assertEquals(3000, checkout.getShoppingBasket().getValueNoDiscount());
     }
 
     @Test
     public void testCanApplyValueDiscount(){
         shoppingBasket.addToShoppingBasket(item);
-        assertEquals(2700, checkout.applyValueDiscount(shoppingBasket.valueNoDiscount()));
+        assertEquals(2700, checkout.applyValueDiscount(shoppingBasket.getValueNoDiscount()));
     }
 
     @Test
     public void testCanApplyLoyaltyDiscount(){
         shoppingBasket.addToShoppingBasket(item);
-        assertEquals(2940, checkout.applyLoyaltyDiscount(shoppingBasket.valueNoDiscount()));
+        customer.setHasLoyaltyCard(true);
+        assertEquals(2940, checkout.applyLoyaltyDiscount(shoppingBasket.getValueNoDiscount()));
     }
 
     @Test
@@ -45,7 +47,7 @@ public class CheckoutTest {
         item.addBogof();
         shoppingBasket.addToShoppingBasket(item);
         shoppingBasket.addToShoppingBasket(item);
-        assertEquals(3000, checkout.applyOffers(shoppingBasket.valueNoDiscount()));
+        assertEquals(3000, checkout.applyOffers(shoppingBasket.getValueNoDiscount()));
     }
 
     @Test
@@ -54,7 +56,27 @@ public class CheckoutTest {
         shoppingBasket.addToShoppingBasket(item);
         shoppingBasket.addToShoppingBasket(item);
         shoppingBasket.addToShoppingBasket(item);
-        assertEquals(6000, checkout.applyOffers(shoppingBasket.valueNoDiscount()));
+        assertEquals(6000, checkout.applyOffers(shoppingBasket.getValueNoDiscount()));
+    }
+
+    @Test
+    public void testCanApplyBogofToFourItems(){
+        item.addBogof();
+        shoppingBasket.addToShoppingBasket(item);
+        shoppingBasket.addToShoppingBasket(item);
+        shoppingBasket.addToShoppingBasket(item);
+        shoppingBasket.addToShoppingBasket(item);
+        assertEquals(6000, checkout.applyOffers(shoppingBasket.getValueNoDiscount()));
+    }
+
+    @Test
+    public void testCanApplyBogofCorrectlyWithMultipleDifferentItemsInBasket(){
+        item2.addBogof();
+        shoppingBasket.addToShoppingBasket(item);
+        shoppingBasket.addToShoppingBasket(item);
+        shoppingBasket.addToShoppingBasket(item2);
+        shoppingBasket.addToShoppingBasket(item2);
+        assertEquals(6160, checkout.applyOffers(shoppingBasket.getValueNoDiscount()));
     }
 
 }

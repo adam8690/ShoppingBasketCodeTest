@@ -30,7 +30,7 @@ public class ShoppingBasketTest {
     @Test
     public void testCanGetValueOfBasket(){
         shoppingBasket.addToShoppingBasket(item);
-        assertEquals(200, shoppingBasket.valueNoDiscount());
+        assertEquals(200, shoppingBasket.getValueNoDiscount());
     }
 
     @Test

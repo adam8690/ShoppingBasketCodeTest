@@ -63,10 +63,12 @@ public class ShoppingBasket {
         return;
     }
 
-    public int valueNoDiscount(){
+    public int getValueNoDiscount(){
         int totalValue = 0;
         for (Item item : basket.keySet()){
-            totalValue = totalValue + item.getPrice();
+            int quantity = basket.get(item);
+            int itemsValue = quantity * item.getPrice();
+            totalValue = totalValue + itemsValue;
         }
         return totalValue;
     }
